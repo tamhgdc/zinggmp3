@@ -1,0 +1,112 @@
+.wrapper {
+    font-size: 14px;
+    border-radius: 999px;
+    line-height: normal;
+    border: 0;
+    display: inline-block;
+    font-weight: 400;
+    text-transform: none;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    color: var(--text-primary);
+
+    + .wrapper {
+        margin-left: 16px;
+    }
+
+    &.disable {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+.icon + .title,
+.title + .icon {
+    margin-left: 8px;
+}
+.icon {
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+    background: inherit;
+}
+//type button
+
+.primary {
+    background-color: #3460f5;
+    border-color: #3460f5;
+    color: var(--text-primary);
+    font-size: 14px;
+    padding: 9px 24px;
+    font-weight: 500;
+    border: 1px solid #3460f5;
+    margin: 0 auto;
+    &:hover {
+        filter: brightness(0.9);
+    }
+}
+
+.circle {
+    margin-left: 5px;
+    min-width: 29px;
+    min-height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background-color: #3460f5;
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(0.9);
+    }
+}
+
+.text {
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.outline {
+    min-height: 28px;
+    min-width: 88px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding: 0 10px;
+    &:hover {
+        background-color: rgba(254, 44, 85, 0.06);
+        cursor: pointer;
+    }
+}
+
+.rounded {
+    border: 1px solid var(--text-primary);
+    background-color: transparent;
+    font-size: 14px;
+    padding: 8px 25px;
+    min-width: 90px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+    border-radius: 999px;
+    cursor: pointer;
+    line-height: 1.43;
+    text-align: center;
+    font-weight: 500;
+
+    &:hover {
+        background-color: hsla(0, 0%, 100%, 0.1);
+    }
+}
+
+//size button
+
+.large {
+    min-width: 168px;
+    min-height: 48px;
+    font-size: 18px;
+    line-height: 25px;
+}
