@@ -1,0 +1,36 @@
+.wrapper {
+    width: 240px;
+    height: calc(100vh - 90px);
+    background-color: #294162;
+}
+
+.logo {
+    height: var(--header-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.logo-img {
+    display: block;
+    width: 120px;
+}
+
+.logo-img--mobile {
+    display: none;
+}
+
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    .logo-img {
+        display: none;
+    }
+    .logo-img--mobile {
+        display: block;
+        height: 100%;
+        padding: 8px;
+    }
+    .wrapper {
+        width: 68px;
+    }
+}
